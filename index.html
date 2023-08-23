@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova aula - Aprendendo sobre tabelas e formularios</title>
+    <style>
+        tr, td {
+            border: 1px solid black;
+            width: 300px;
+            height: 50px;
+        }
+        body {
+            background-color: bisque;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>As Maiores Inovações Tecnológicas dos Anos 2030</h1>
+
+    <h2> Intelegência artificial (IA) </h2>
+    <p> A inteligência artificial (IA) é um conjunto de tecnologias que permitem aos computadores executar uma variedade de funções avançadas, incluindo a capacidade de ver, entender e traduzir idiomas falados e escritos, analisar dados, fazer recomendações e muito mais.</p>
+
+    <table border = "1" width="500">
+        <thead>
+         <tr>
+             <th scope="col">Coluna 1</th>
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inteligencia artificial</td>
+            </tr>
+            <tr>
+                <td>Internet das coisas</td>
+            </tr>
+            <tr>
+                <td>Internet 6G</td>
+            </tr>
+          </tbody>
+          <tfoot>
+         <tr>
+             <td>Big Data</td>
+         </tr>
+      </tfoot>
+     </table>
+
+     <h2> Para envio de opiniões </h2>
+
+     <form action="example.html" method="POST">
+        <label for="years"> Sugestão:</label>
+        <input type="text" name="first-text-field">
+        <br>
+        <label for="years"> Senha:   </label>
+        <input type="password" id="user-password" name="user-password">
+        <br>
+        <label for="years">  Idade:  </label>
+        <input id="years" name="years" type="number" step="1">
+        <br>
+
+        <p> Você já conhecia alguma dessa inteligência? </p>
+        <input type="radio" id="sim" name="answer" value="Sim">
+        <label for="Sim">Sim</label> 
+        <br>
+        <input type="radio" id="eleven" name="answer" value="Não"
+        <label for="Nao"> Não</label>
+        <br>
+        <p> Qual das invoções você mais gostou:</p>
+
+        <label for="ia">Inteligencia artificial</label>
+        <input id="ia" name="inteligencia" type="checkbox" value="ia"
+        <br>
+        <label for="ic">Internet das coisas</label>
+        <input id="ic" name="Internet" type="checkbox" value="ic"
+        <br>
+        <label for="i6">Internet 6G</label>
+        <input id="i6" name="6G" type="checkbox" value="i6"
+        <br>
+        <label for="big">Big Data</label>
+        <input id="big" name="Big" type="checkbox" value="big"
+        <br>
+        <br>
+        <div></div>
+        <br>
+        <label for="lunch"> Selecione seu país </label>
+        <select id="lunch" name="lunch">
+            <option value="pizza">----</option>
+            <option value="pizza">Argentina</option>
+            <option value="pizza">Brasil</option>
+            <option value="pizza">Canada</option>
+            <option value="pizza">EUA</option>
+            <option value="pizza">Mexico</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <label for="blog"> Comentários: </label>
+        <br>
+        <textarea id="blog" name="blog" rows="5" cols="30">
+        </textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
